@@ -1,0 +1,58 @@
+.uni-scrollbar-wrapper__native {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: #dedfe1;
+    border-radius: 4px;
+    opacity: 0.3;
+  }
+}
+
+.uni-scrollbar-wrapper {
+  position: relative;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .uni-scrollbar-rail {
+    position: absolute;
+    border-radius: 4px;
+
+    .uni-scrollbar-thumb {
+      position: absolute;
+      display: block;
+      background-color: #909399;
+      opacity: 0.3;
+      cursor: pointer;
+      border-radius: 4px;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &.is-vertical {
+      right: 0;
+      width: 8px;
+      height: 100%;
+
+      .uni-scrollbar-thumb {
+        width: 100%;
+      }
+    }
+
+    &.is-horizontal {
+      bottom: 0;
+      width: 100%;
+      height: 8px;
+
+      .uni-scrollbar-thumb {
+        height: 100%;
+      }
+    }
+  }
+}

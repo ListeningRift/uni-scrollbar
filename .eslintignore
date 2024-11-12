@@ -1,0 +1,7 @@
+rollup.config.prod.js
+rollup.config.dev.js
+tsconfig.json
+.prettierrc.js
+.eslintrc.js
+dist/**
+node_modules/**
